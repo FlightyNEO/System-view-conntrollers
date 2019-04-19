@@ -206,7 +206,7 @@ extension ViewController: UIImagePickerControllerDelegate & UINavigationControll
 extension ViewController: MFMailComposeViewControllerDelegate {
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        dismiss(animated: true)
+        controller.dismiss(animated: true)
     }
     
 }
@@ -214,7 +214,7 @@ extension ViewController: MFMailComposeViewControllerDelegate {
 extension ViewController: MFMessageComposeViewControllerDelegate {
     
     func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
-        dismiss(animated: true)
+        controller.dismiss(animated: true)
     }
     
 }
